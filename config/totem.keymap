@@ -85,10 +85,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp Q  &kp W  &kp F    &kp P          &kp G        &kp J    &kp L        &kp U      &kp Y    &kp SEMI
-           &kp A  &kp R  &kp S    &kp T          &kp D        &kp H    &kp N        &kp E      &kp I    &kp O
-&lt 1 ESC  &kp Z  &kp X  &kp C    &kp V          &kp B        &kp K    &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
-                         &kp DEL  &mt LSHFT TAB  &kp SPACE    &kp RET  &lt SYM ESC  &kp BSPC
+           &kp Q  &kp W  &kp F               &kp P          &kp G        &kp J    &kp L        &kp U      &kp Y    &kp SEMI
+           &kp A  &kp R  &kp S               &kp T          &kp D        &kp H    &kp N        &kp E      &kp I    &kp O
+&lt 1 ESC  &kp Z  &kp X  &kp C               &kp V          &kp B        &kp K    &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
+                         &mt LCMD BACKSPACE  &mt LSHFT TAB  &kp SPACE    &kp RET  &lt SYM ESC  &kp BSPC
             >;
         };
 
