@@ -87,16 +87,16 @@
            &kp Q            &kp W       &kp F         &kp P        &kp G        &kp J         &kp L            &kp U         &kp Y              &kp SEMI
            &mt LEFT_META A  &mt LALT R  &mt LCTRL S   &mt LSHFT T  &kp D        &kp H         &mt RSHFT N      &mt LCTRL E   &mt LALT I         &mt LCMD O
 &lt 2 ESC  &kp Z            &mt RALT X  &kp C         &kp V        &kp B        &kp K         &kp M            &kp COMMA     &mt RIGHT_ALT DOT  &kp FSLH    &kp BSLH
-                                        &lt 1 ESCAPE  &lt 2 SPACE  &lt 3 TAB    &lt 4 RETURN  &lt 0 BACKSPACE  &lt 0 DELETE
+                                        &lt 1 ESCAPE  &lt 2 SPACE  &lt 3 TAB    &lt 4 RETURN  &lt 5 BACKSPACE  &lt 0 DELETE
             >;
         };
 
         medialayer {
             bindings = <
-     &kp  &kp  &kp  &kp  &kp    &kp R       &kp M             &kp H              &kp S            &kp V
-     &kp  &kp  &kp  &kp  &kp    &kp E       &kp K_PREVIOUS    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT
-&kp  &kp  &kp  &kp  &kp  &kp    &kp O       &kp N0            &kp N1             &kp N2           &kp N3      &kp
-               &kp  &kp  &kp    &kp C_STOP  &kp C_PLAY_PAUSE  &kp C_MUTE
+        &trans  &trans  &trans  &trans  &trans    &kp R       &kp M             &kp H              &kp S            &kp V
+        &trans  &trans  &trans  &trans  &trans    &kp E       &kp K_PREVIOUS    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT
+&trans  &trans  &trans  &trans  &trans  &trans    &kp O       &kp N0            &kp N1             &kp N2           &kp N3      &trans
+                        &trans  &trans  &trans    &kp C_STOP  &kp C_PLAY_PAUSE  &kp C_MUTE
             >;
         };
 
@@ -142,6 +142,15 @@
             >;
 
             label = "sym";
+        };
+
+        numlayer {
+            bindings = <
+        &kp LEFT_BRACKET  &kp KP_N7        &kp KP_N8   &kp KP_NUMBER_9  &kp RIGHT_BRACKET    &trans  &trans  &trans  &trans  &trans
+        &kp SEMI          &kp KP_NUMBER_4  &kp KP_N5   &kp KP_NUMBER_6  &kp EQUAL            &trans  &trans  &trans  &trans  &trans
+&trans  &kp GRAVE         &kp KP_NUMBER_1  &kp KP_N2   &kp KP_N3        &kp BACKSLASH        &trans  &trans  &trans  &trans  &trans  &trans
+                                           &kp KP_DOT  &kp KP_N0        &kp MINUS            &trans  &trans  &trans
+            >;
         };
     };
 };
