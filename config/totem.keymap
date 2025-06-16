@@ -25,7 +25,6 @@
 
 &mt {
     quick-tap-ms = <100>;
-    global-quick-tap;
     flavor = "tap-preferred";
     tapping-term-ms = <200>;
 };
@@ -49,7 +48,6 @@
 
     macros {
         gif: gif {
-            label = "giphy";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -67,7 +65,6 @@
     behaviors {
         mtl: mtl {
             compatible = "zmk,behavior-hold-tap";
-            label = "MTL";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -79,7 +76,6 @@
 
         mtr: mtr {
             compatible = "zmk,behavior-hold-tap";
-            label = "MTR";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -91,7 +87,6 @@
 
         fast_mouse: fast_mouse {
             compatible = "zmk,behavior-hold-tap";
-            label = "FAST_MOUSE_MOD";
             bindings = <&zip_xy_scaler 2 1 &trans>;
             #binding-cells = <0>;
     flavor = "hold-preferred"; // <- ENSURE this is here
