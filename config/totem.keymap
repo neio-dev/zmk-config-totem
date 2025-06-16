@@ -93,6 +93,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "FAST_MOUSE_MOD";
             bindings = <&zip_xy_scaler 2 1>, <&kp C>;
+    flavor = "hold-preferred"; // <- ENSURE this is here
+    tapping-term-ms = <20>;
         };
     };
 
