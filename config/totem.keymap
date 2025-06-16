@@ -23,6 +23,47 @@
 #define TVP1 4
 #define TVP2 5
 
+
+// This lets you define how fast the maximum speed is reached. So after 500ms the speed will be the full speed defined. In other words, it is the amount of time you need to hold a key to move the mouse before reaching the full speed.
+#define MOUSE_TIME_TO_MAX_SPEED 500 
+
+
+// This is what you need to set the mouse speed
+#define U_MOUSE_MOVE_MAX 3000
+
+
+
+#undef MOVE_UP
+#undef MOVE_DOWN
+#undef MOVE_LEFT
+#undef MOVE_RIGHT
+#define MOVE_UP MOVE_VERT(-U_MOUSE_MOVE_MAX)
+#define MOVE_DOWN MOVE_VERT(U_MOUSE_MOVE_MAX)
+#define MOVE_LEFT MOVE_HOR(-U_MOUSE_MOVE_MAX)
+#define MOVE_RIGHT MOVE_HOR(U_MOUSE_MOVE_MAX)
+
+&mmv {
+    time-to-max-speed-ms = <MOUSE_TIME_TO_MAX_SPEED>;
+};
+
+
+// This is was you need for setting the scroll speed
+#define U_MOUSE_SCROLL_MAX 20 
+
+
+#undef SCROLL_UP
+#undef SCROLL_DOWN
+#undef SCROLL_LEFT
+#undef SCROLL_RIGHT
+#define SCROLL_UP SCROLL_VERT(U_MOUSE_SCROLL_MAX)
+#define SCROLL_DOWN SCROLL_VERT(-U_MOUSE_SCROLL_MAX)
+#define SCROLL_LEFT SCROLL_HOR(-U_MOUSE_SCROLL_MAX)
+#define SCROLL_RIGHT SCROLL_HOR(U_MOUSE_SCROLL_MAX)
+
+&mwh {
+    time-to-max-speed-ms = <MOUSE_TIME_TO_MAX_SPEED>;
+};
+
 &mt {
     quick-tap-ms = <100>;
     global-quick-tap;
