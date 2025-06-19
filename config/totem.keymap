@@ -38,12 +38,6 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
-
-        combo_tvp {
-            timeout-ms = <100>;
-            key-positions = <11 12 13>;
-            bindings = <&tog 0>;
-        };
     };
 
     macros {
@@ -116,7 +110,7 @@
            &kp Q             &kp W        &kp F         &kp P         &kp G        &kp J         &kp L            &kp U         &kp Y              &kp SEMI
            &mtl LEFT_META A  &mtl LALT R  &mtl LCTRL S  &mtl LSHFT T  &kp D        &kp H         &mtr RSHFT N     &mtr LCTRL E  &mtr LALT I        &mtr LCMD O
 &lt 2 ESC  &kp Z             &mt RALT X   &kp C         &kp V         &kp B        &kp K         &kp M            &kp COMMA     &mt RIGHT_ALT DOT  &kp FSLH     &kp SINGLE_QUOTE
-                                          &lt 1 ESCAPE  &lt 2 SPACE   &lt 3 TAB    &lt 4 RETURN  &lt 5 BACKSPACE  &lt 6 DELETE
+                                          &lt 1 ESCAPE  &lt 2 TAB   &lt 3 SPACE    &lt 4 BACKSPACE  &lt 5 RETURN  &lt 6 DELETE
             >;
         };
 
