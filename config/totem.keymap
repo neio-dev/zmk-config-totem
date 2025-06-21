@@ -158,10 +158,10 @@
 
         numlayer {
             bindings = <
-        &kp LEFT_BRACKET  &kp KP_N7        &kp KP_N8   &kp KP_NUMBER_9  &kp RIGHT_BRACKET    &trans  &trans  &trans  &trans  &trans
-        &kp SEMI          &kp KP_NUMBER_4  &kp KP_N5   &kp KP_NUMBER_6  &kp EQUAL            &trans  &trans  &trans  &trans  &trans
-&trans  &kp GRAVE         &kp KP_NUMBER_1  &kp KP_N2   &kp KP_N3        &kp BACKSLASH        &trans  &trans  &trans  &trans  &trans  &trans
-                                           &kp KP_DOT  &kp KP_N0        &kp MINUS            &trans  &trans  &trans
+        &kp LEFT_BRACKET  &kp 7        &kp 8   &kp 9  &kp RIGHT_BRACKET    &trans  &trans  &trans  &trans  &trans
+        &kp SEMI          &kp 4  &kp 5   &kp 6  &kp EQUAL            &trans  &trans  &trans  &trans  &trans
+&trans  &kp GRAVE         &kp 1  &kp 2   &kp 3        &kp BACKSLASH        &trans  &trans  &trans  &trans  &trans  &trans
+                                           &kp KP_DOT  &kp 0        &kp MINUS            &trans  &trans  &trans
             >;
         };
 
