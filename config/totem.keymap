@@ -84,7 +84,7 @@
             label = "ACCEL_MOUSE";
             #binding-cells = <2>;                 // x and y
             bindings = <&mmv>, <&mmv_accel>;      // normal, accelerated
-            mods = <MOD_LSFT>;                  // hold LSHIFT to accelerate
+            mods = <(MOD_LSFT)>;                  // hold LSHIFT to accelerate
         };
     };
 
