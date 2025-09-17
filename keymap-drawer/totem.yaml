@@ -134,10 +134,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_UP'
-  - '&mmv MOVE_RIGHT'
+  - {t: '&mmv', s: '&mmv_accel'}
+  - {t: '&mmv', s: '&mmv_accel'}
+  - {t: '&mmv', s: '&mmv_accel'}
+  - {t: '&mmv', s: '&mmv_accel'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
