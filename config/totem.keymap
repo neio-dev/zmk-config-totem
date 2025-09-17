@@ -62,7 +62,7 @@
             #binding-cells = <0>;
             bindings = <&mmv MOVE_DOWN>, <&mmv  MOVE_Y(-200)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        }
+        };
         
         mtl: mtl {
             compatible = "zmk,behavior-hold-tap";
