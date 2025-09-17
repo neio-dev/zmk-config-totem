@@ -11,10 +11,10 @@ layers:
   - U
   - Y
   - ;
-  - '&mtl LEFT_META A'
-  - '&mtl LALT R'
-  - '&mtl LCTRL S'
-  - '&mtl LSHFT T'
+  - {t: A, h: LEFT META}
+  - {t: R, h: LALT}
+  - {t: S, h: LCTRL}
+  - {t: T, h: LSHFT}
   - D
   - H
   - {t: N, h: RSHFT}
@@ -135,7 +135,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mmv MOVE_LEFT'
-  - '&ms_accel'
+  - {t: '&mmv MOVE_DOWN', s: '&mmv MOVE_Y(-200)'}
   - '&mmv MOVE_UP'
   - '&mmv MOVE_RIGHT'
   - {t: ▽, type: trans}
