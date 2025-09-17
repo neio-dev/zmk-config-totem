@@ -197,9 +197,9 @@ layers:
   - {t: ▽, type: trans}
   numlayer:
   - '['
-  - KC 7
-  - KC 8
-  - KC 9
+  - '7'
+  - '8'
+  - '9'
   - ']'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -207,9 +207,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ;
-  - KC 4
-  - KC 5
-  - KC 6
+  - '4'
+  - '5'
+  - '6'
   - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -218,9 +218,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '`'
-  - KC 1
-  - KC 2
-  - KC 3
+  - '1'
+  - '2'
+  - '3'
   - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -229,7 +229,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - KP DOT
-  - KC 0
+  - '0'
   - '-'
   - {t: ▽, type: trans}
   - {type: held}
