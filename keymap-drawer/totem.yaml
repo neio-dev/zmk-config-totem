@@ -91,7 +91,7 @@ layers:
   - UNDO
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&lt 4'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - CAPSLOCK
@@ -130,7 +130,7 @@ layers:
   - UNDO
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&lt 4'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
