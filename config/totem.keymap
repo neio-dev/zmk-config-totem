@@ -61,28 +61,28 @@
         mup: mup {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&mmv MOVE_Y(-50)>, <&mmv  MOVE_Y(-100)>;
+            bindings = <&mmv MOVE_Y(-600)>, <&mmv  MOVE_Y(-200)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         
         mdown: mdown {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&mmv MOVE_Y(50)>, <&mmv  MOVE_Y(100)>;
+            bindings = <&mmv MOVE_Y(600)>, <&mmv  MOVE_Y(200)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
          mright: mright {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&mmv MOVE_X(50)>, <&mmv  MOVE_X(100)>;
+            bindings = <&mmv MOVE_X(600)>, <&mmv  MOVE_X(200)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
          mleft: mleft {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&mmv MOVE_X(-50)>, <&mmv  MOVE_X(-100)>;
+            bindings = <&mmv MOVE_X(-600)>, <&mmv  MOVE_X(-200)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
