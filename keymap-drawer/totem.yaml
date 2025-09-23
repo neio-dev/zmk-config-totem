@@ -91,7 +91,7 @@ layers:
   - UNDO
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&lt 4'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - CAPSLOCK
@@ -134,10 +134,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '&mmv MOVE_X(-600)', s: '&mmv MOVE_X(-200)'}
-  - {t: '&mmv MOVE_Y(600)', s: '&mmv MOVE_Y(200)'}
-  - {t: '&mmv MOVE_Y(-600)', s: '&mmv MOVE_Y(-200)'}
-  - {t: '&mmv MOVE_X(600)', s: '&mmv MOVE_X(200)'}
+  - '&mmv MOVE_X(-600)'
+  - '&mmv MOVE_Y(600)'
+  - '&mmv MOVE_Y(-600)'
+  - '&mmv MOVE_X(600)'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -153,6 +153,45 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - '&mkp MB1'
+  - '&mkp MB3'
+  - '&mkp MB2'
+  slowmouselayer:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - REDO
+  - Gui+AC PASTE
+  - AC COPY
+  - AC CUT
+  - UNDO
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mmv MOVE_X(-200)'
+  - '&mmv MOVE_Y(200)'
+  - '&mmv MOVE_Y(-200)'
+  - '&mmv MOVE_X(200)'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_RIGHT'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '&mkp MB1'
   - '&mkp MB3'
   - '&mkp MB2'
