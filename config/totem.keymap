@@ -131,7 +131,7 @@
            &kp Q             &kp W        &kp F         &kp P         &kp G        &kp J         &kp L            &kp U         &kp Y              &kp SEMI
            &mtl LEFT_META A  &mtl LALT R  &mtl LCTRL S  &mtl LSHFT T  &kp D        &kp H         &mtr RSHFT N     &mtr LCTRL E  &mtr LALT I        &mtr LCMD O
 &lt 2 ESC  &kp Z             &mt RALT X   &kp C         &kp V         &kp B        &kp K         &kp M            &kp COMMA     &mt RIGHT_ALT DOT  &kp FSLH     &kp SINGLE_QUOTE
-                                          &lt 1 ESCAPE  &lt 2 TAB   &lt 3 SPACE    &lt 4 BACKSPACE  &lt 5 RETURN  &lt 6 DELETE
+                                          &lt 1 ESCAPE  &lt 2 TAB   &lt 3 SPACE    &lt 5 BACKSPACE  &lt 6 RETURN  &lt 7 DELETE
             >;
         };
 
@@ -160,7 +160,7 @@
 
             bindings = <
         &trans  &trans  &trans  &trans  &trans    &kp K_REDO    &kp C_AC_PASTE  &kp C_AC_COPY  &kp C_AC_CUT  &kp K_UNDO
-        &trans  &trans  &trans  &trans  &trans    &kp CAPSLOCK  &kp LEFT        &kp DOWN       &kp UP_ARROW  &kp RIGHT
+        &trans  &trans  &lt 4  &trans  &trans    &kp CAPSLOCK  &kp LEFT        &kp DOWN       &kp UP_ARROW  &kp RIGHT
 &trans  &trans  &trans  &trans  &trans  &trans    &kp INSERT    &kp HOME        &kp PG_DN      &kp PAGE_UP   &kp END     &trans
                         &trans  &trans  &trans    &kp ENTER     &kp BACKSPACE   &kp DELETE
             >;
@@ -169,12 +169,20 @@
         mouselayer {
             bindings = <
         &trans  &trans  &trans  &trans  &trans    &kp K_REDO  &kp LG(C_AC_PASTE)  &kp C_AC_COPY   &kp C_AC_CUT  &kp K_UNDO
-        &trans  &trans  &trans  &trans  &trans   &trans      &mleft      &mdown  &mup  &mright
+        &trans  &trans  &trans  &trans  &trans   &trans      &mmv MOVE_X(-600)      &mmv MOVE_Y(600)  &mmv MOVE_Y(-600)  &mmv MOVE_X(600)
 &trans  &trans  &trans  &trans  &trans  &trans    &trans      &msc SCRL_LEFT    &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
                         &trans  &trans  &trans    &mkp MB1    &mkp MB3            &mkp MB2
             >;
         };
 
+        slowmouselayer {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &kp K_REDO  &kp LG(C_AC_PASTE)  &kp C_AC_COPY   &kp C_AC_CUT  &kp K_UNDO
+        &trans  &trans  &trans  &trans  &trans   &trans      &mmv MOVE_X(-200)      &mmv MOVE_Y(200)  &mmv MOVE_Y(-200)  &mmv MOVE_X(200)
+&trans  &trans  &trans  &trans  &trans  &trans    &trans      &msc SCRL_LEFT    &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+                        &trans  &trans  &trans    &mkp MB1    &mkp MB3            &mkp MB2
+            >;
+        };
         symlayer {
             bindings = <
         &kp LEFT_BRACE  &kp AMPERSAND  &kp ASTERISK  &kp KP_LPAR  &kp RIGHT_BRACE    &trans  &trans  &trans  &trans  &trans
