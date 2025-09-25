@@ -130,7 +130,7 @@ layers:
   - UNDO
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&lt 4'
+  - {t: ESCAPE, h: slowmouselayer}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -169,7 +169,7 @@ layers:
   - UNDO
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -191,7 +191,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - '&mkp MB1'
   - '&mkp MB3'
   - '&mkp MB2'
