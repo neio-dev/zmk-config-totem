@@ -279,10 +279,10 @@ layers:
   - F8
   - F9
   - PRINTSCREEN
-  - BT NXT
-  - BT CLR
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
   - {t: ▽, type: trans}
   - F11
   - F4
@@ -305,7 +305,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BT CLR
   - CONTEXT MENU
   - SPACE
   - TAB
