@@ -85,10 +85,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - REDO
-  - AC PASTE
-  - AC COPY
-  - AC CUT
-  - UNDO
+  - HOME
+  - PG DN
+  - PG UP
+  - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
