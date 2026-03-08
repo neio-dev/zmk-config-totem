@@ -27,9 +27,10 @@
 #define FUN 7
 #define LNAV 8
 #define RNAV 9
+#define NNUM 10
 
 &mt {
-    quick-tap-ms = <100>;
+    quick-tap-ms = <150>;
     flavor = "tap-preferred";
     tapping-term-ms = <200>;
 };
@@ -96,7 +97,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <100>;
+            quick-tap-ms = <150>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <5 6 8 15 16 17 18 19 26 27 28 29 30 35 36 37 5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 35 36 37>;
         };
@@ -133,9 +134,9 @@
 
             bindings = <
            &kp Q             &kp W        &kp F         &kp P         &kp G        &kp J         &kp L            &kp U         &kp Y              &kp SEMI
-           &mtl LEFT_META A  &mtl LALT R  &mtl LCTRL S  &mtl LSHFT T  &kp D        &kp H         &mtr RSHFT N     &mtr LCTRL E  &mtr LALT I        &mtr LCMD O
+           &mtl LEFT_META A  &mtl LCTRL R  &mtl LALT S  &mtl LSHFT T  &kp D        &kp H         &mtr RSHFT N     &mtr LALT E  &mtr LCTRL I        &mtr LCMD O
 &lt LNAV ESC  &kp Z             &mt RALT X   &kp C         &kp V         &kp B        &kp K         &kp M            &kp COMMA     &mt RIGHT_ALT DOT  &kp FSLH     &lt RNAV SINGLE_QUOTE
-                                          &lt MEDIA ESCAPE  &lt NAV TAB   &lt MOUSE SPACE    &lt SYM BACKSPACE  &lt NUM RETURN  &lt FUN DELETE
+                                          &lt MEDIA ESCAPE  &lt MOUSE TAB   &lt NAV SPACE    &lt SYM BACKSPACE  &lt NUM RETURN  &lt FUN DELETE
             >;
         };
 
@@ -235,10 +236,10 @@
     };
     oldnumlayer {
             bindings = <
-        &kp LEFT_BRACKET  &kp N7  &kp N8   &kp N9  &kp RIGHT_BRACKET    &trans  &trans  &trans  &trans  &trans
-        &kp SEMI          &kp N4  &kp N5   &kp N6  &kp EQUAL            &trans  &trans  &trans  &trans  &trans
-&trans  &kp GRAVE         &kp N1  &kp N2   &kp N3        &kp BACKSLASH        &trans  &trans  &trans  &trans  &trans  &trans
-                                           &kp KP_DOT  &kp N0        &kp MINUS            &trans  &trans  &trans
+        &kp N1  &kp N2  &kp N3   &kp N4  &kp N5            &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
+        &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans            &trans  &trans  &trans
             >;
         };
 
