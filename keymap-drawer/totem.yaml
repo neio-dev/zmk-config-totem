@@ -1,44 +1,7 @@
 layout: {zmk_keyboard: totem}
 layers:
-  base:
-  - Q
-  - W
-  - F
-  - P
-  - G
-  - J
-  - L
-  - U
-  - Y
-  - ;
-  - {t: A, h: LEFT META}
-  - {t: R, h: LCTRL}
-  - {t: S, h: LALT}
-  - {t: T, h: LSHFT}
-  - D
-  - H
-  - {t: N, h: RSHFT}
-  - {t: E, h: LALT}
-  - {t: I, h: LCTRL}
-  - {t: O, h: LCMD}
-  - {t: ESC, h: left_nav}
-  - Z
-  - {t: X, h: RALT}
-  - C
-  - V
-  - B
-  - K
-  - M
-  - ','
-  - {t: ., h: RIGHT ALT}
-  - /
-  - {t: '''', h: right_nav}
-  - {t: ESCAPE, h: medialayer}
-  - {t: TAB, h: mouselayer}
-  - {t: SPACE, h: nav}
-  - {t: BACKSPACE, h: symlayer}
-  - {t: RETURN, h: numlayer}
-  - {t: DELETE, h: funlayer}
+  base: [Q, W, F, P, G, J, L, U, Y, ;, '&td_a', '&td_r', '&td_s', '&td_t', D, H, '&td_n', '&td_e', '&td_i', '&td_o', '&td_lnav', Z, X, C, V, B, K, M, ',', ., /, '&td_rnav',
+    '&td_esc', '&td_tab', '&td_spc', '&td_bspc', '&td_ret', '&td_del']
   medialayer:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -72,7 +35,7 @@ layers:
   - '2'
   - '3'
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - STOP
@@ -113,7 +76,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - ENTER
   - BACKSPACE
   - DELETE
@@ -151,7 +114,7 @@ layers:
   - '&msc SCRL_RIGHT'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB1'
   - '&mkp MB3'
@@ -190,7 +153,7 @@ layers:
   - '&msc SCRL_RIGHT'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB1'
   - '&mkp MB3'
@@ -231,7 +194,7 @@ layers:
   - (
   - )
   - '-'
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   numlayer:
@@ -271,7 +234,7 @@ layers:
   - '0'
   - '-'
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   funlayer:
   - F12
@@ -311,7 +274,7 @@ layers:
   - TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   left_nav:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -333,7 +296,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - LEFT
   - DOWN
   - RIGHT
@@ -383,7 +346,7 @@ layers:
   - LEFT
   - DOWN
   - RIGHT
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
