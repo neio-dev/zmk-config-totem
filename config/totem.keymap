@@ -112,28 +112,6 @@
             flavor = "tap-preferred";
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25 32 33 34>;
         };
-                    // ── tap dances for home row mods (double-tap+hold = repeat key) ─
-        td_a: td_a { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&mtl LEFT_META A>, <&kp A>; };
-        td_r: td_r { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&mtl LCTRL R>,    <&kp R>; };
-        td_s: td_s { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&mtl LALT S>,     <&kp S>; };
-        td_t: td_t { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&mtl LSHFT T>,    <&kp T>; };
-
-        td_n: td_n { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&mtr RSHFT N>,  <&kp N>; };
-        td_e: td_e { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&mtr LALT E>,   <&kp E>; };
-        td_i: td_i { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&mtr LCTRL I>,  <&kp I>; };
-        td_o: td_o { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&mtr LCMD O>,   <&kp O>; };
-
-        // ── tap dances for layer-tap keys (double-tap+hold = repeat tap key) ─
-        td_esc:  td_esc  { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&lt MEDIA ESCAPE>,  <&kp ESCAPE>; };
-        td_tab:  td_tab  { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&lt MOUSE TAB>,      <&kp TAB>; };
-        td_spc:  td_spc  { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&lt NAV SPACE>,       <&kp SPACE>; };
-        td_bspc: td_bspc { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&lt SYM BACKSPACE>,   <&kp BACKSPACE>; };
-        td_ret:  td_ret  { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&lt NUM RETURN>,      <&kp RETURN>; };
-        td_del:  td_del  { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&lt FUN DELETE>,      <&kp DELETE>; };
-
-        // ── thumb ESC (left outer thumb, was lt LNAV ESC) ───────────────
-        td_lnav: td_lnav { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&lt LNAV ESC>, <&kp ESC>; };
-        td_rnav: td_rnav { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&lt RNAV SINGLE_QUOTE>, <&kp SINGLE_QUOTE>; };
     };
 
     keymap {
@@ -155,10 +133,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q    &kp W    &kp F    &kp P    &kp G      &kp J     &kp L    &kp U      &kp Y     &kp SEMI
-           &td_a    &td_r    &td_s    &td_t    &kp D      &kp H     &td_n    &td_e      &td_i     &td_o
-&td_lnav   &kp Z    &kp X  &kp C  &kp V   &kp B      &kp K     &kp M    &kp COMMA  &kp DOT  &kp FSLH  &td_rnav
-                             &td_esc  &td_tab  &td_spc    &td_bspc  &td_ret  &td_del
+           &kp Q             &kp W        &kp F         &kp P         &kp G        &kp J         &kp L            &kp U         &kp Y              &kp SEMI
+           &mtl LEFT_META A  &mtl LCTRL R  &mtl LALT S  &mtl LSHFT T  &kp D        &kp H         &mtr RSHFT N     &mtr LALT E  &mtr LCTRL I        &mtr LCMD O
+&lt LNAV ESC  &kp Z             &mt RALT X   &kp C         &kp V         &kp B        &kp K         &kp M            &kp COMMA     &mt RIGHT_ALT DOT  &kp FSLH     &lt RNAV SINGLE_QUOTE
+                                          &lt MEDIA ESCAPE  &lt MOUSE TAB   &lt NAV SPACE    &lt SYM BACKSPACE  &lt NUM RETURN  &lt FUN DELETE
             >;
         };
 
