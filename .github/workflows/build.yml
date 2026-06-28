@@ -1,5 +1,19 @@
-on: [push, pull_request, workflow_dispatch]
-
 jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      archive_name: ${{ steps.name.outputs.archive_name }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - id: name
+        run: |
+          msg=$(git log -1 --pretty=%s)
+          msg=$(echo "$msg" | tr ' /:' '___')
+          echo "archive_name=$msg" >> "$GITHUB_OUTPUT"
+
   build:
+    needs: prepare
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.2
+    with:
+      archive_name: ${{ needs.prepare.outputs.archive_name }}
